@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 import java.util.ArrayList;
 import java.util.List;
 
-@Repository
+//@Repository
 public class MemoryPostRepository implements PostRepository {
 
     private static List<Post> store = new ArrayList<>();

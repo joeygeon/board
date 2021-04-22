@@ -1,6 +1,7 @@
 package com.example.board.domain;
 
 public class Post {
+    private Long id;
     private String name;
     private String title;
     private String content;
@@ -30,10 +31,19 @@ public class Post {
         this.content = content;
     }
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     @Override
     public String toString() {
         return "Post{" +
-                "name='" + name + '\'' +
+                "id=" + id +
+                ", name='" + name + '\'' +
                 ", title='" + title + '\'' +
                 ", content='" + content + '\'' +
                 '}';

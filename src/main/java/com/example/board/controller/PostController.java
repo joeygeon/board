@@ -26,7 +26,7 @@ public class PostController {
 
     @GetMapping(value = "/posts/new")
     public String createForm() {
-        return "write_content";
+        return "writeContent";
     }
 
     @PostMapping(value = "/posts/write")
